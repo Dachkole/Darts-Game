@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darts Scoreboard - Cut-Throat Cricket</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Darts Scoreboard</h1>
+    <h2>Cut-Throat Cricket</h2>
+    <form id="player-registration-form">
+      <label for="player1">Player 1:</label>
+      <input type="text" name="player1" id="player1" required>
+      <label for="player2">Player 2:</label>
+      <input type="text" name="player2" id="player2" required>
+      <label for="player3">Player 3:</label>
+      <input type="text" name="player3" id="player3">
+      <label for="player4">Player 4:</label>
+      <input type="text" name="player4" id="player4">
+      <button class="header-try-btn" type="submit">Start Game</button>
+    </form>
+    <div class="gameboard">
+      <div class="scoreboard"></div>
+      <form id="number-input-form">
+        <label for="number">Number:</label>
+        <select name="number" id="number">
+          <option value="20">20</option>
+          <option value="19">19</option>
+          <option value="18">18</option>
+          <option value="17">17</option>
+          <option value="16">16</option>
+          <option value="15">15</option>
+          <option value="B">Bullseye</option>
+        </select>
+        <label for="hits">Hits:</label>
+        <select name="hits" id="hits">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <button class="header-try-btn" type="submit">Submit</button>
+      </form>
+    </div>
+    <div id="winner-modal" class="modal hidden">
+        <div class="modal-content">
+          <span id="modal-close" class="close">&times;</span>
+          <h2>Congratulations!</h2>
+          <p id="winner-message"></p>
+        </div>
+      </div>
+  </div>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

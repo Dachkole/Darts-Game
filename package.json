@@ -1,0 +1,23 @@
+{
+  "name": "dartsgame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "scss": "node-sass --output-style compressed -o styles src/styles",
+    "watch:tsc": "tsc --watch",
+    "watch:scss": "node-sass --output-style compressed -o styles src/styles --watch",
+    "start": "lite-server",
+    "dev": "concurrently \"npm run watch:tsc\" \"npm run watch:scss\" \"npm run start\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "lite-server": "^2.6.1",
+    "node-sass": "^8.0.0",
+    "typescript": "^5.0.2"
+  }
+}
